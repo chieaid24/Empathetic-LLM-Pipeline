@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pydantic
+transformers
+sentence-transformers
+faiss-gpu
+pandas
+openpyxl
+numpy
+torch
+requests

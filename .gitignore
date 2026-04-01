@@ -1,0 +1,72 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+wheels/
+sdist/
+*.so
+.Python
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Conda
+.conda/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Hugging Face model cache (large files, re-downloadable)
+.cache/
+huggingface/
+
+# Environment variables / secrets
+.env
+.env.*
+*.env
+secrets.json
+config.local.*
+
+# Installers
+*.sh
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Distribution / packaging
+*.manifest
+*.spec
+
+# pytest
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+.claude
+CLAUDE.md
