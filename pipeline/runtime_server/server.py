@@ -30,7 +30,7 @@ scenario_embeddings = scenario_embeddings / np.linalg.norm(scenario_embeddings, 
 faiss_index = faiss.IndexFlatIP(scenario_embeddings.shape[1])
 faiss_index.add(scenario_embeddings)
 
-# --- Output filter --- 
+# --- Output filter ---
 SAFE_FALLBACK = "Thanks for telling me how you feel. I hear you, and your feelings really matter."
 
 BLOCKLIST_PATH = "pipeline/data/profanity_wordlist.txt"
