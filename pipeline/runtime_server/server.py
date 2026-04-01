@@ -14,7 +14,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, TextIteratorStream
 
 app = FastAPI()
 
-# Model and tokenizer are loaded once when the server starts 
+# Model and tokenizer are loaded once when the server starts
 tokenizer = AutoTokenizer.from_pretrained('google/gemma-3-4b-it')
 model = AutoModelForCausalLM.from_pretrained('google/gemma-3-4b-it', device_map='cuda')
 
