@@ -3,14 +3,14 @@ import requests
 
 SERVER_URL = "http://localhost:8000/generate"
 
-# Calls the server with default settings (no streaming), in which the server responsds with a full JSON response
+# Calls the server with default settings (no streaming), in which the server responsds with a full JSON response 
 def get_empathic_response(text, max_new_tokens=600):
     payload = {"text": text, "max_new_tokens": max_new_tokens}
     response = requests.post(SERVER_URL, json=payload)
     response.raise_for_status()
     return response.json()
 
-# Calls the server with stream: True, in which the server sends Server Side Events, which returns the response in chunks
+# Calls the server with stream: True, in which the server sends Server Side Events, which returns the response in chunks 
 def get_empathic_response_stream(text, max_new_tokens=600):
     payload = {"text": text, "max_new_tokens": max_new_tokens, "stream": True}
     response = requests.post(SERVER_URL, json=payload, stream=True)
