@@ -14,7 +14,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, TextIteratorStream
 
 app = FastAPI()
 
-# Model and tokenizer are loaded once when the server starts 
+# Model and tokenizer are loaded once when the server starts
 tokenizer = AutoTokenizer.from_pretrained('google/gemma-3-4b-it')
 model = AutoModelForCausalLM.from_pretrained('google/gemma-3-4b-it', device_map='cuda')
 
@@ -49,7 +49,7 @@ _emoji_pattern = re.compile(
     "\U0001F1E0-\U0001F1FF"  # flags
     "\U00002702-\U000027B0"  # dingbats
     "\U0000FE00-\U0000FE0F"  # variation selectors
-    "\U0000200D"             # zero-width joiner
+    "\U0000200D"             # zero-width joiner  
     "\U000024C2-\U0001F251"
     "]+",
     flags=re.UNICODE,
