@@ -1,6 +1,6 @@
 # Furhat Empathy LLM
 
-Peer support empathy response system for the Furhat robot — SIRRL Lab, University of Waterloo.
+Peer support empathy response system built for a Furhat robot, in partnership with the SIRRL Lab, University of Waterloo.
 
 **NOTE: This repo is for showcase purposes only. All sensitive data and benchmarking have been removed.**
 
